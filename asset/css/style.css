@@ -7,17 +7,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.7), 
-        rgba(255, 255, 255, 0.7)
-    ), url('../../images/Me.jpg'); /* Kombinasi transparansi dan gambar */
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+        url('../../images/Me.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
-
-
-
 
 body::before {
     content: "";
