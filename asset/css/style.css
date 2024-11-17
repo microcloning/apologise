@@ -1,19 +1,23 @@
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffe4e1; /* Warna dasar */
+    background-color: #ffe4e1;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../../images/Me.jpg');
-    background-size: cover; /* Memastikan gambar memenuhi seluruh layar */
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.7)
+    ), url('../../images/Me.jpg'); /* Kombinasi transparansi dan gambar */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative; /* Untuk layer tambahan */
 }
+
+
+
 
 body::before {
     content: "";
