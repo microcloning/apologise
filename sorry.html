@@ -52,15 +52,13 @@
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
                 includedLanguages: 'en,id',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            });
         }
 
         window.onload = loadGoogleTranslate;
     </script>
     <script src="js/script.js"></script>
-
-    <!-- Div untuk Google Translator -->
-    <div id="google_translate_element"></div>
 </body>
 </html>
