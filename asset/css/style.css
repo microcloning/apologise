@@ -86,3 +86,17 @@ body::before {
 .button-container button:hover {
     background-color: #ff3b2f;
 }
+/* Hilangkan logo Google Translate */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    display: none !important;
+}
+
+/* Pastikan halaman tidak memiliki margin tambahan akibat elemen tersembunyi */
+body {
+    margin-top: 0 !important;
+}
+
