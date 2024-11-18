@@ -1,3 +1,4 @@
+/* Memastikan konten berada di tengah */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffe4e1;
@@ -16,6 +17,7 @@ body {
     position: relative;
 }
 
+/* Transparansi untuk overlay */
 body::before {
     content: "";
     position: absolute;
@@ -23,15 +25,16 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7); /* Warna putih transparan */
-    z-index: 0; /* Memastikan layer ini berada di belakang */
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 0;
 }
 
+/* Container konten */
 .container {
-    position: relative; /* Agar konten tetap berada di atas */
-    z-index: 1; /* Tingkatkan z-index untuk menempatkan konten di atas background */
+    position: relative;
+    z-index: 1;
     text-align: center;
-    background: rgba(255, 255, 255, 0.9); /* Background putih semi transparan */
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -39,22 +42,14 @@ body::before {
     max-width: 400px;
 }
 
-.container {
-    text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 400px;
-}
-
+/* Style header */
 .header h1 {
     color: #ff6f61;
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
+/* Style gambar */
 .image-container img {
     width: 100%;
     max-width: 250px;
@@ -62,16 +57,21 @@ body::before {
     margin: 10px 0;
 }
 
+/* Style pesan */
 .message p {
     font-size: 1.1rem;
     color: #555;
     margin: 15px 0;
 }
 
+/* Style audio */
 .music audio {
     margin: 10px 0;
+    display: block;
+    width: 100%;
 }
 
+/* Style tombol */
 .button-container button {
     background-color: #ff6f61;
     color: white;
@@ -85,4 +85,4 @@ body::before {
 
 .button-container button:hover {
     background-color: #ff3b2f;
-  }
+}
